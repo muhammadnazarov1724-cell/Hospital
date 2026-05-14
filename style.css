@@ -216,6 +216,39 @@ header .header2 nav p {
   gap: 25px;
 }
 
+.main6 {
+  width: 1220px;
+  height: 360px;
+  background-color: #272727;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main6 .dl6 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.main6 .dl6 .inps {
+  display: flex;
+}
+.main6 .dl6 .inps #name {
+  width: 270px;
+  height: 44px;
+  border-radius: 30px;
+}
+.main6 .dl6 button {
+  background-color: #30A862;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  width: 270px;
+}
+
 @media (max-width: 510px) {
   header .header1 p {
     display: none;
@@ -262,6 +295,18 @@ header .header2 nav p {
     height: auto;
   }
   .main5 .imagd {
+    flex-direction: column;
+  }
+  .main6 {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+  .main6 .doc {
+    display: none;
+  }
+  .main6 .inps {
+    width: 90%;
     flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
