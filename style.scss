@@ -253,7 +253,35 @@ header {
     }
 }
 }
-
+footer {
+    height: 350px;
+    background-color: $maincolor;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    .dleft {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        .adres {
+            display: flex;
+            flex-direction: column;
+            row-gap: 7px;
+        }
+    }
+    .drf {
+        display: flex;
+        gap: 30px;
+        .dp {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+            color: white;
+        }
+    }
+}
 
 
 
@@ -336,5 +364,10 @@ header {
         width: 90%;
         flex-direction: column;
     }
+}
+footer {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0px;
 }
     }

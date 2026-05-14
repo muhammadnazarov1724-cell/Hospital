@@ -249,6 +249,36 @@ header .header2 nav p {
   width: 270px;
 }
 
+footer {
+  height: 350px;
+  background-color: #30A862;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+footer .dleft {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+footer .dleft .adres {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+footer .drf {
+  display: flex;
+  gap: 30px;
+}
+footer .drf .dp {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  color: white;
+}
+
 @media (max-width: 510px) {
   header .header1 p {
     display: none;
@@ -308,5 +338,10 @@ header .header2 nav p {
   .main6 .inps {
     width: 90%;
     flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0px;
   }
 }/*# sourceMappingURL=style.css.map */
