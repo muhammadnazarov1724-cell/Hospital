@@ -1,0 +1,101 @@
+$maincolor : #30A862;
+$fw : 500 ;
+$fz : 18px ;
+$pcolor : gray ;
+@mixin btns {
+  background-color: $maincolor;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 25px 0px;
+    .header1 {
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        align-items: center;
+        p {
+            color: gray;
+            font-size: $fz;
+        }
+        .eye {
+            display: flex ;
+            align-items: center;
+            color: $pcolor;
+            gap: 10px;
+        }
+        .nomer {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            p {
+                color: black;
+                font-weight: $fw;
+                font-size: 22px;
+            }
+            button {
+                @include btns;
+            }
+        }
+    }
+    .header2 {
+        display: flex;
+        align-items: center;
+        padding: 20px 60px;
+        gap: 35px;
+        nav {
+            display: flex;
+            gap: 60px;
+            p {
+                font-size: $fz;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 540px ) {
+    header {
+
+        .header1 {
+            p {
+                display: none;
+            }
+            .eye {
+                display: none;
+                i {
+                    display: none;
+                }
+            }
+            .nomer {
+                button {
+                    display: none;
+                }
+            }
+        }
+        .header2 {
+            nav {
+                p {
+                    display: none;
+                }
+            }
+        }
+
+    }
+    }
