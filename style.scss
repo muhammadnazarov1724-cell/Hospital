@@ -213,6 +213,18 @@ header {
     }
 }
 }
+.main5 {
+    height: 700px;
+    background-color:#F1F5F8;
+    padding: 100px;
+    .imagd {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 25px;
+    }
+}
 
 
 
@@ -278,5 +290,11 @@ header {
     .doctor {
         display: none;
     }
+}
+.main5 {
+    height: auto;
+.imagd {
+  flex-direction: column;
+}
 }
     }
